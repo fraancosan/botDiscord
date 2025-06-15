@@ -1,0 +1,22 @@
+import { Message } from 'discord.js';
+import { Kazagumo } from 'kazagumo';
+
+export default {
+  name: 'stop',
+  description: 'Detiene la reproducción de música',
+  /**
+   * @param {Message} message
+   * @param {string[]} args
+   * @param {Kazagumo} kazagumo
+   */
+  async execute(message, args, kazagumo = message.client.kazagumo) {
+    const { member, channel, guild, author } = message;
+
+    const player = kazagumo.getPlayer(guild.id);
+    if (!player) {
+      return message.reply('No hay música reproduciéndose en este momento.');
+    } else {
+      await player.destroy();
+    }
+  },
+};

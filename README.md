@@ -1,4 +1,5 @@
-# botDiscord
+# Bot Discord
+Bot de discord exclusivamente para la reproduccion de musica.
 
 ## Environment Variables
 

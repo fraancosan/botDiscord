@@ -7,7 +7,7 @@ const node = [
     name: 'Main Node',
     url: process.env.LAVALINK_URL,
     auth: process.env.LAVALINK_AUTH,
-    secure: true,
+    secure: process.env.LAVALINK_SECURE === 'true',
   },
 ];
 

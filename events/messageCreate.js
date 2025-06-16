@@ -1,6 +1,6 @@
 import { Events } from 'discord.js';
 
-const PREFIX = '..';
+const PREFIX = process.env.PREFIX || '..';
 
 export default {
   name: Events.MessageCreate,

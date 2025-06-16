@@ -11,4 +11,5 @@ DISCORD_TOKEN=mysecretDiscordToken
 LAVALINK_URL=lavalink-v2.pericsq.ro:443
 LAVALINK_AUTH=wwweasycodero
 LAVALINK_SECURE=true
+PREFIX=..
 ```
